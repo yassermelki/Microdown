@@ -185,15 +185,6 @@ MicReferenceChecker >> initialize [
 ]
 
 { #category : 'testing' }
-MicReferenceChecker >> isOk [
-	self flag: #fixThisLogic.
-	"isOkay vs. isOk ???"
-	
-	^ duplicatedAnchors isEmpty and: [
-		  references allSatisfy: [ :each | self hasAlreadyDefinedAs: each ] ]
-]
-
-{ #category : 'testing' }
 MicReferenceChecker >> isOkay [
 
 	^ results isEmpty
